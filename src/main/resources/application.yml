@@ -1,0 +1,22 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: FLIPKART-APP
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/XE
+    username: RPH
+    password: admin
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
